@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de la IA Moderna</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            /* Fondo muy claro, similar a Wikipedia */
+            color: #202122;
+            /* Color de texto oscuro y neutral */
+        }
+        
+        header {
+            background: #f8f9fa;
+            /* Fondo neutro para el encabezado */
+            color: #202122;
+            padding: 20px 20px 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid #a2a9b1;
+            /* Borde inferior delgado */
+            position: relative;
+        }
+        /* Estilo para el nombre y la cédula */
+        
+        .personal-info {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 0.9em;
+            text-align: right;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border: 1px solid #a2a9b1;
+            /* Borde simple del contenedor */
+            box-shadow: none;
+            /* Sin sombra para el estilo Wikipedia */
+        }
+        
+        h1 {
+            color: #111111;
+            /* Negro oscuro para el título principal */
+            font-size: 2.2em;
+        }
+        
+        h2 {
+            color: #111111;
+            /* Negro oscuro para los subtítulos */
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.6em;
+        }
+        
+        h3 {
+            color: #111111;
+            /* Negro oscuro para los sub-subtítulos */
+            font-size: 1.3em;
+        }
+        
+        ul,
+        ol,
+        dl {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        /* Las etiquetas strong vuelven al color de texto principal */
+        
+        strong {
+            color: inherit;
+            font-weight: bold;
+        }
+        
+        .concept-box {
+            border: 1px solid #a2a9b1;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 3px;
+            background-color: #f9f9f9;
+            /* Fondo muy claro para el recuadro */
+        }
+        /* Estilo específico para el Índice (Tabla de Contenido) */
+        
+        #indice {
+            background-color: #f9f9f9;
+            border: 1px solid #a2a9b1;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 3px;
+        }
+        
+        #indice h3 {
+            margin-top: 0;
+            color: #111111;
+            /* Negro oscuro para el título del índice */
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+        }
+        
+        #indice ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        #indice ul li a {
+            text-decoration: none;
+            color: #0645ad;
+            /* Azul estándar de enlaces de Wikipedia */
+            display: block;
+            padding: 3px 0;
+        }
+        
+        #indice ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para los enlaces normales en el cuerpo del texto */
+        
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="personal-info">
+            <strong>Héctor Bolívar</strong><br> C.I.: 30.483.199hb
+        </div>
+        <h1>Fundamentos de la Inteligencia Artificial Moderna</h1>
+        <p>Los pilares que impulsan la tecnología del futuro.</p>
+    </header>
+
+    <div class="container">
+
+        <div id="indice">
+            <h3>Tabla de Contenido</h3>
+            <ul>
+                <li><a href="#que-es-ia">1. ¿Qué es la IA Moderna?</a></li>
+                <li><a href="#pilares-tecnologicos">2. Pilares Tecnológicos Clave</a></li>
+                <li><a href="#mecanismo-respuesta">3. Mecanismo de Funcionamiento y Velocidad</a></li>
+                <li><a href="#tipos-ia">4. Tipos de Inteligencia Artificial</a></li>
+                <li><a href="#impacto-etica">5. Impacto y Ética de la IA</a></li>
+            </ul>
+        </div>
+
+        <section id="que-es-ia">
+            <h2>¿Qué es la IA Moderna?</h2>
+            <p>La **Inteligencia Artificial (IA)** es un campo de la informática que se enfoca en crear sistemas capaces de realizar tareas que normalmente requieren **inteligencia humana**. Esto incluye aprender, razonar, percibir, comprender el lenguaje
+                y tomar decisiones.</p>
+            <p class="concept-box">La esencia de la IA moderna reside en su capacidad para **aprender y adaptarse** a partir de grandes volúmenes de **datos**, en lugar de ser programada explícitamente para cada tarea específica.</p>
+        </section>
+
+        <section id="pilares-tecnologicos">
+            <h2>Pilares Tecnológicos Clave</h2>
+            <p>Estos son los componentes esenciales que sustentan la IA en la actualidad:</p>
+            <ol>
+                <li>
+                    <strong>Aprendizaje Automático (Machine Learning - ML):</strong>
+                    <p>Es el motor de la IA. Permite a las máquinas mejorar su rendimiento en una tarea específica mediante el análisis de datos sin ser programadas paso a paso.</p>
+                    <ul>
+                        <li><strong>Aprendizaje Supervisado:</strong> Entrena el modelo con datos "etiquetados" (ejemplo: imágenes de gatos y perros, donde cada una está marcada correctamente).</li>
+                        <li><strong>Aprendizaje No Supervisado:</strong> El modelo encuentra patrones y estructuras ocultas en datos "no etiquetados" (ejemplo: agrupar clientes por comportamiento de compra).</li>
+                        <li><strong>Aprendizaje por Refuerzo:</strong> El modelo aprende mediante prueba y error, recibiendo "recompensas" por acciones correctas. Es fundamental en robótica y juegos.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Redes Neuronales y Aprendizaje Profundo (Deep Learning):</strong>
+                    <p>Las **Redes Neuronales** son modelos matemáticos inspirados en la estructura del cerebro humano. El **Aprendizaje Profundo** utiliza redes neuronales con múltiples capas ("profundas") para analizar datos complejos como imágenes, voz
+                        y texto, logrando un alto nivel de precisión en tareas complejas.</p>
+                </li>
+                <li>
+                    <strong>Procesamiento del Lenguaje Natural (PLN/NLP):</strong>
+                    <p>Habilita a las máquinas para comprender, interpretar y generar **lenguaje humano** (escrito y hablado). Es la base de asistentes virtuales (Siri, Alexa) y sistemas de traducción automática.</p>
+                </li>
+                <li>
+                    <strong>Visión por Computadora (Computer Vision):</strong>
+                    <p>Permite a las máquinas "ver" e interpretar el mundo visual, procesando imágenes y videos para identificar objetos, rostros y patrones. Clave para la conducción autónoma y el diagnóstico médico por imagen.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="mecanismo-respuesta">
+            <h2>Mecanismo de Funcionamiento y Velocidad</h2>
+            <p>El funcionamiento y la velocidad de la IA moderna se basan en una combinación de **entrenamiento intensivo** y **hardware especializado**.</p>
+
+            <h3>¿Cómo funciona el procesamiento de una pregunta?</h3>
+            <ol>
+                <li>
+                    <strong>Entrenamiento (Fase Lenta):</strong>
+                    <p>Antes de poder responder, el modelo (especialmente un **Modelo de Lenguaje Grande** o LLM) pasa por una fase de entrenamiento. Se le expone a **billones de parámetros** (datos y texto) de todo internet y libros. En esta fase, el modelo
+                        aprende la **probabilidad** de que una palabra siga a otra en un contexto dado. Esto crea una vasta red de conocimiento codificada.</p>
+                </li>
+                <li>
+                    <strong>Inferencia (Fase Rápida):</strong>
+                    <p>Cuando usted hace una pregunta (**Input**), el modelo no busca información en tiempo real. En su lugar, realiza una **Inferencia**: utiliza la red de conocimiento previamente aprendida para generar la respuesta. </p>
+                    <p>El proceso es matemático y probabilístico: convierte su pregunta en **vectores** (datos numéricos) y calcula, capa por capa, cuál es la palabra más probable para iniciar la respuesta, luego la segunda, y así sucesivamente, **generando
+                        el texto token por token**.</p>
+                </li>
+            </ol>
+
+            <h3>¿Por qué la respuesta es tan rápida?</h3>
+            <ul>
+                <li>
+                    <strong>Hardware Paralelo (GPUs):</strong> La clave de la velocidad son las **Unidades de Procesamiento Gráfico (GPUs)**. A diferencia de las CPUs (procesadores normales) que procesan tareas en serie, las GPUs están diseñadas para
+                    ejecutar miles de cálculos matemáticos **simultáneamente** (en paralelo). Esta capacidad es esencial para mover y calcular rápidamente los billones de parámetros de la red neuronal.
+                </li>
+                <li>
+                    <strong>No hay Búsqueda en Bases de Datos:</strong> El modelo no está "googleando" la respuesta. Está consultando su propia estructura de conocimiento interna (la red neuronal), lo que es un proceso puramente computacional y mucho
+                    más rápido que una búsqueda tradicional.
+                </li>
+                <li>
+                    <strong>"Token-a-Token":</strong> El modelo genera el texto por partes (tokens, que son palabras o sub-palabras) de forma continua, dándonos la impresión de una respuesta instantánea y fluida, ya que no espera a escribir el texto completo
+                    para empezar a mostrarlo.
+                </li>
+            </ul>
+        </section>
+
+        <section id="tipos-ia">
+            <h2>Tipos de Inteligencia Artificial</h2>
+            <dl>
+                <dt><strong>IA Débil o Estrecha (ANI)</strong></dt>
+                <dd>La IA que usamos hoy en día. Está diseñada y entrenada para una **tarea específica** (ejemplos: sistemas de recomendación, detección de spam, chatbots).</dd>
+
+                <dt><strong>IA Fuerte o General (AGI)</strong></dt>
+                <dd>Concepto teórico que busca replicar la **inteligencia humana completa** con la capacidad de aprender, comprender y aplicar conocimientos para resolver cualquier problema intelectual. Aún no se ha logrado.</dd>
+
+                <dt><strong>Superinteligencia Artificial (ASI)</strong></dt>
+                <dd>Nivel hipotético donde la IA supera la inteligencia humana en todos los aspectos, siendo significativamente más inteligente.</dd>
+            </dl>
+        </section>
+
+        <section id="impacto-etica">
+            <h2>Impacto y Ética de la IA</h2>
+            <p>La IA está transformando industrias (salud, finanzas, transporte) a través de la **automatización** y la **mejora en la toma de decisiones**. Sin embargo, su desarrollo plantea desafíos éticos importantes:</p>
+            <ul>
+                <li><strong>Sesgo Algorítmico:</strong> Los sistemas pueden perpetuar o amplificar prejuicios presentes en los datos de entrenamiento.</li>
+                <li><strong>Privacidad de Datos:</strong> La IA requiere grandes volúmenes de datos, lo que exige políticas estrictas de protección.</li>
+                <li><strong>Transparencia (XAI):</strong> Necesidad de comprender cómo y por qué un sistema de IA toma una determinada decisión.</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
